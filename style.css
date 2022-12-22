@@ -23,7 +23,7 @@
 
 .container{
     max-width: 1140px;
-    margin: auto;
+    margin: auto; /*para ele se auto posicionar no meio*/
 
 }
     /*--------------header---------------*/ 
@@ -46,8 +46,8 @@ header {
     color: #0075ed;
 }
 
-.logo {
-    
+#btn-mobile{
+    display: none;
 }
 
 .nav ul {
@@ -384,9 +384,177 @@ header {
     color: #0075ed;
  }
 
+ /*------------------MOBILE--------------------*/
+
+@media (max-width: 767px){
+
+
+    .container{
+        max-width: 700px;
+        margin: auto; /*para ele se auto posicionar no meio*/
+    }
+/*------------------HEADER--------------------*/
+    
+
+
+    header{
+        max-width: 766px;
+        position: fixed;
+       
+    }
+
+    #btn-mobile{
+        display: block;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .icon-number, .social, .contact-button {
+        display: none;
+    }
+/*------------------BANNER--------------------*/
+    #banner{
+        max-width: 767px;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+    }
+
+    #banner-area{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner-area h2{
+        font-size: 2em;
+        padding-bottom: 10px;
+    }
+
+    #banner-area p1{
+        font-size: 1em;
+    }
+
+    #banner-area p2{
+        font-size: 13px;
+    }
+
+    .content-area1, .content-area2{
+        padding-top: -50px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    /*------------------PARTNERS--------------------*/
+
+
+   #partner-area{
+        width: 100%;
+        display: flex;
+   } 
+
+   .closed {
+        display: none;
+   }
+
+   .imagem img{
+        gap: 15px;
+   }
+
+   /*------------------CONTATC--------------------*/
+
+   #contact{
+        width: 100%;  
+   }
+
+   #contatc-area{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+   }
+
+   /*------------------FOOTER--------------------*/
 
 
 
+ footer{
+        width: 100%;
+        background-color: #0d2a3d; 
+        height: 600px;
+        margin: auto;
+        
+    }
 
+    #footer-area{
+        width: 100vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
 
+    .box-footer{
+        width: 100vw;
+        
+    }
+   
+    .box-footer .logo1 {
+        width: 100%;
+        max-width: 200px;
+        padding-bottom: 5px;
+    }
 
+    .box-footer p {
+        width: 100vw;
+        color: white;
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .box-footer a {
+        color: #0075ed;
+        font-weight: bold;
+    }
+    .box-footer .title {
+        padding: 15px 0px 20px 0px;
+        color: #0075ed;
+    }
+
+    #margin{
+        margin-left: 0px;
+    }
+    
+
+    .box-footer ul li {
+        color: white;
+        padding-bottom: 8px;
+        font-size: 15px;
+        
+    }
+/*-------------------FOOTER2-----------------*/
+
+#footer-background{
+    height: 80px;
+    background-color: white;
+ }
+
+ #footer-area2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ #footer-area2 p{
+    font-size: 13px;
+    padding-top: 15px;
+ }
+
+ #footer-area2 a{
+    color: #0075ed;
+ }
+
+}
